@@ -1,0 +1,25 @@
+﻿@model KHSC_Jasper.Models.ShiftInfo
+
+@{
+    ViewData["Title"] = "Details";
+}
+<link href="~/css/form.css" rel="stylesheet" />
+<link href="~/css/table.css" rel="stylesheet" />
+<h2>Details</h2>
+
+<div>
+    <h4>ShiftInfo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ShiftName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ShiftName)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ShiftId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

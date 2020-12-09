@@ -1,0 +1,37 @@
+﻿@model KHSC_Jasper.Models.SubjectInfo
+
+@{
+    ViewData["Title"] = "Details";
+}
+<link href="~/css/form.css" rel="stylesheet" />
+<link href="~/css/table.css" rel="stylesheet" />
+<h2>Details</h2>
+
+<div>
+    <h4>SubjectInfo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.SubjectName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SubjectName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Class)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Class.ClassName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Group)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Group.GroupName)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.SubjectId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

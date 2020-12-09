@@ -1,0 +1,61 @@
+﻿@model KHSC_Jasper.Models.StaffInfo
+
+@{
+    ViewData["Title"] = "Details";
+}
+<link href="~/css/form.css" rel="stylesheet" />
+<link href="~/css/table.css" rel="stylesheet" />
+<h2>Details</h2>
+
+<div>
+    <h4>StaffInfo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.StaffId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.StaffId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.StaffName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.StaffName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.WorkingSector)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.WorkingSector)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Cell)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Cell)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Ss)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Ss.MonthName)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.SsId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

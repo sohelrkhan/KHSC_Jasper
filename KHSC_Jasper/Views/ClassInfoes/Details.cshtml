@@ -1,0 +1,26 @@
+﻿@model KHSC_Jasper.Models.ClassInfo
+
+@{
+    ViewData["Title"] = "Details";
+}
+<link href="~/css/form.css" rel="stylesheet" />
+<link href="~/css/table.css" rel="stylesheet" />
+<h2>Details</h2>
+
+<div>
+    <h4>ClassInfo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Class Name
+    @*@Html.DisplayNameFor(model => model.ClassName)*@
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ClassName)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ClassId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

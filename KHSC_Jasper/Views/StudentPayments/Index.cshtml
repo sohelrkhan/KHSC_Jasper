@@ -1,0 +1,253 @@
+﻿@model IEnumerable<KHSC_Jasper.Models.StudentPayment>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<link href="~/css/form.css" rel="stylesheet" />
+<link href="~/css/table.css" rel="stylesheet" />
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FormFee)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AdmissionFee)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ReAdmissionFee)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TcCharge)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SeasonCharge)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CertificateFee)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TestimonialFee)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.WhichMonthFee)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MonthFeeAmount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ct1Fee)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ct2Fee)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HalfYearlyFee)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FinalYearlyFee)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.WaterElectricityFee)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tex)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DevlopmentFee)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BuildingDevFee)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LabFee)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LibraryFee)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ComputerFee)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RegistrationFee)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CautionMoney)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Fine)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ReportCardFee)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AdmitCardFee)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdCardFee)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FormFillUpEFf)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FormFillUpJsc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FormFillUpSsc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FormFillUpHsc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ItFee)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ScienceDevelopmentFee)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CareFee)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OtherFeeName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OtherFeeAmount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Student)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Date)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FormFee)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AdmissionFee)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ReAdmissionFee)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TcCharge)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SeasonCharge)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CertificateFee)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TestimonialFee)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.WhichMonthFee)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MonthFeeAmount)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ct1Fee)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ct2Fee)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.HalfYearlyFee)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FinalYearlyFee)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.WaterElectricityFee)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Tex)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DevlopmentFee)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BuildingDevFee)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LabFee)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LibraryFee)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ComputerFee)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RegistrationFee)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CautionMoney)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Fine)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ReportCardFee)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AdmitCardFee)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IdCardFee)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FormFillUpEFf)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FormFillUpJsc)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FormFillUpSsc)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FormFillUpHsc)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ItFee)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ScienceDevelopmentFee)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CareFee)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.OtherFeeName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.OtherFeeAmount)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Student.StudentName)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.SpId">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.SpId">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.SpId">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

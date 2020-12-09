@@ -1,0 +1,259 @@
+﻿@model KHSC_Jasper.Models.AdmissionForm
+
+@{
+    ViewData["Title"] = "Create";
+}
+<link href="~/css/form.css" rel="stylesheet" />
+<link href="~/css/table.css" rel="stylesheet" />
+<h2>Create</h2>
+
+<h4>AdmissionForm</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="AdmitCardNo" class="control-label"></label>
+                <input asp-for="AdmitCardNo" class="form-control" />
+                <span asp-validation-for="AdmitCardNo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AdmissionDate" class="control-label"></label>
+                <input asp-for="AdmissionDate" class="form-control" />
+                <span asp-validation-for="AdmissionDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CollegeRoll" class="control-label"></label>
+                <input asp-for="CollegeRoll" class="form-control" />
+                <span asp-validation-for="CollegeRoll" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Section" class="control-label"></label>
+                <input asp-for="Section" class="form-control" />
+                <span asp-validation-for="Section" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ElectiveSubject1" class="control-label"></label>
+                <input asp-for="ElectiveSubject1" class="form-control" />
+                <span asp-validation-for="ElectiveSubject1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ElectiveSubject2" class="control-label"></label>
+                <input asp-for="ElectiveSubject2" class="form-control" />
+                <span asp-validation-for="ElectiveSubject2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ElectiveSubject3" class="control-label"></label>
+                <input asp-for="ElectiveSubject3" class="form-control" />
+                <span asp-validation-for="ElectiveSubject3" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FourthSubject" class="control-label"></label>
+                <input asp-for="FourthSubject" class="form-control" />
+                <span asp-validation-for="FourthSubject" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NameOftheStudent" class="control-label"></label>
+                <input asp-for="NameOftheStudent" class="form-control" />
+                <span asp-validation-for="NameOftheStudent" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DateOfBirth" class="control-label"></label>
+                <input asp-for="DateOfBirth" class="form-control" />
+                <span asp-validation-for="DateOfBirth" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Religion" class="control-label"></label>
+                <input asp-for="Religion" class="form-control" />
+                <span asp-validation-for="Religion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Nationality" class="control-label"></label>
+                <input asp-for="Nationality" class="form-control" />
+                <span asp-validation-for="Nationality" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Height" class="control-label"></label>
+                <input asp-for="Height" class="form-control" />
+                <span asp-validation-for="Height" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Weight" class="control-label"></label>
+                <input asp-for="Weight" class="form-control" />
+                <span asp-validation-for="Weight" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BloodGroup" class="control-label"></label>
+                <input asp-for="BloodGroup" class="form-control" />
+                <span asp-validation-for="BloodGroup" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FathersName" class="control-label"></label>
+                <input asp-for="FathersName" class="form-control" />
+                <span asp-validation-for="FathersName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FathersEducationalQualification" class="control-label"></label>
+                <input asp-for="FathersEducationalQualification" class="form-control" />
+                <span asp-validation-for="FathersEducationalQualification" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FathersOccupation" class="control-label"></label>
+                <input asp-for="FathersOccupation" class="form-control" />
+                <span asp-validation-for="FathersOccupation" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FathersMobileNo" class="control-label"></label>
+                <input asp-for="FathersMobileNo" class="form-control" />
+                <span asp-validation-for="FathersMobileNo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FatherNid" class="control-label"></label>
+                <input asp-for="FatherNid" class="form-control" />
+                <span asp-validation-for="FatherNid" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MothersName" class="control-label"></label>
+                <input asp-for="MothersName" class="form-control" />
+                <span asp-validation-for="MothersName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MothersEducationalQualification" class="control-label"></label>
+                <input asp-for="MothersEducationalQualification" class="form-control" />
+                <span asp-validation-for="MothersEducationalQualification" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MothersOccupation" class="control-label"></label>
+                <input asp-for="MothersOccupation" class="form-control" />
+                <span asp-validation-for="MothersOccupation" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MothersMobileNo" class="control-label"></label>
+                <input asp-for="MothersMobileNo" class="form-control" />
+                <span asp-validation-for="MothersMobileNo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MotherNid" class="control-label"></label>
+                <input asp-for="MotherNid" class="form-control" />
+                <span asp-validation-for="MotherNid" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PresentAddress" class="control-label"></label>
+                <input asp-for="PresentAddress" class="form-control" />
+                <span asp-validation-for="PresentAddress" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PermanentAddress" class="control-label"></label>
+                <input asp-for="PermanentAddress" class="form-control" />
+                <span asp-validation-for="PermanentAddress" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NameOfGuardian" class="control-label"></label>
+                <input asp-for="NameOfGuardian" class="form-control" />
+                <span asp-validation-for="NameOfGuardian" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GuardianAddress" class="control-label"></label>
+                <input asp-for="GuardianAddress" class="form-control" />
+                <span asp-validation-for="GuardianAddress" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GuardianMobileNo" class="control-label"></label>
+                <input asp-for="GuardianMobileNo" class="form-control" />
+                <span asp-validation-for="GuardianMobileNo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FathersTotalAnnualincome" class="control-label"></label>
+                <input asp-for="FathersTotalAnnualincome" class="form-control" />
+                <span asp-validation-for="FathersTotalAnnualincome" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="JscyearOfTheExam" class="control-label"></label>
+                <input asp-for="JscyearOfTheExam" class="form-control" />
+                <span asp-validation-for="JscyearOfTheExam" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="JscnameOfTheBoard" class="control-label"></label>
+                <input asp-for="JscnameOfTheBoard" class="form-control" />
+                <span asp-validation-for="JscnameOfTheBoard" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="JscroolNo" class="control-label"></label>
+                <input asp-for="JscroolNo" class="form-control" />
+                <span asp-validation-for="JscroolNo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="JscregistrationNo" class="control-label"></label>
+                <input asp-for="JscregistrationNo" class="form-control" />
+                <span asp-validation-for="JscregistrationNo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Jscsession" class="control-label"></label>
+                <input asp-for="Jscsession" class="form-control" />
+                <span asp-validation-for="Jscsession" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="JscGpa" class="control-label"></label>
+                <input asp-for="JscGpa" class="form-control" />
+                <span asp-validation-for="JscGpa" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="JscnameOfInstitution" class="control-label"></label>
+                <input asp-for="JscnameOfInstitution" class="form-control" />
+                <span asp-validation-for="JscnameOfInstitution" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SscyearOfTheExam" class="control-label"></label>
+                <input asp-for="SscyearOfTheExam" class="form-control" />
+                <span asp-validation-for="SscyearOfTheExam" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SscnameOfTheBoard" class="control-label"></label>
+                <input asp-for="SscnameOfTheBoard" class="form-control" />
+                <span asp-validation-for="SscnameOfTheBoard" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SscroolNo" class="control-label"></label>
+                <input asp-for="SscroolNo" class="form-control" />
+                <span asp-validation-for="SscroolNo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SscregistrationNo" class="control-label"></label>
+                <input asp-for="SscregistrationNo" class="form-control" />
+                <span asp-validation-for="SscregistrationNo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Sscsession" class="control-label"></label>
+                <input asp-for="Sscsession" class="form-control" />
+                <span asp-validation-for="Sscsession" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SscGpa" class="control-label"></label>
+                <input asp-for="SscGpa" class="form-control" />
+                <span asp-validation-for="SscGpa" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SscnameOfInstitution" class="control-label"></label>
+                <input asp-for="SscnameOfInstitution" class="form-control" />
+                <span asp-validation-for="SscnameOfInstitution" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NameOfTheLastSchoolorCollegeAttended" class="control-label"></label>
+                <input asp-for="NameOfTheLastSchoolorCollegeAttended" class="form-control" />
+                <span asp-validation-for="NameOfTheLastSchoolorCollegeAttended" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

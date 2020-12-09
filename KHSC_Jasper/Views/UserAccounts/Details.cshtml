@@ -1,0 +1,43 @@
+﻿@model KHSC_Jasper.Models.UserAccounts
+
+@{
+    ViewData["Title"] = "Details";
+}
+<link href="~/css/form.css" rel="stylesheet" />
+<link href="~/css/table.css" rel="stylesheet" />
+<h2>Details</h2>
+
+<div>
+    <h4>UserAccounts</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Username)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Username)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Password)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Password)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ConfirmPassword)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ConfirmPassword)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.UserRole)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.UserRole)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

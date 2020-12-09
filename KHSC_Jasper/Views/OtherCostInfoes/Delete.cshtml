@@ -1,0 +1,112 @@
+﻿@model KHSC_Jasper.Models.OtherCostInfo
+
+@{
+    ViewData["Title"] = "Delete";
+}
+<link href="~/css/form.css" rel="stylesheet" />
+<link href="~/css/table.css" rel="stylesheet" />
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>OtherCostInfo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ElectricityBillMonthName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ElectricityBillMonthName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ElectricityBillAmount)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ElectricityBillAmount)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.WaterBillMonth)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.WaterBillMonth)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.WaterBillAmount)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.WaterBillAmount)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ItBill)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ItBill)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FunctionCost)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FunctionCost)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ScienceFairCost)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ScienceFairCost)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.StudyTourCost)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.StudyTourCost)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PoorFund)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PoorFund)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SchoolDev)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SchoolDev)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SchoolMaintenance)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SchoolMaintenance)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ServicingCharge)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ServicingCharge)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AnyCostName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AnyCostName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AnyCostFee)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AnyCostFee)
+        </dd>
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="OcId" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

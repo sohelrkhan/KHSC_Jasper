@@ -1,0 +1,43 @@
+﻿@model KHSC_Jasper.Models.StaffSalary
+
+@{
+    ViewData["Title"] = "Details";
+}
+<link href="~/css/form.css" rel="stylesheet" />
+<link href="~/css/table.css" rel="stylesheet" />
+<h2>Details</h2>
+
+<div>
+    <h4>StaffSalary</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.StaffId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.StaffId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.MonthName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MonthName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Amount)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Amount)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.SsId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

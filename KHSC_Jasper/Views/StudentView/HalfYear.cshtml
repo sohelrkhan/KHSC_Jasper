@@ -1,0 +1,65 @@
+﻿@model IEnumerable<KHSC_Jasper.ViewModel.HalfYearResultViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<link href="~/css/form.css" rel="stylesheet" />
+<link href="~/css/table.css" rel="stylesheet" />
+<h2 style="text-align:center">Half Year Result</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Student Id
+            </th>
+            <th>
+                Student Name
+            </th>
+            <th>
+                Class Test 1
+            </th>
+            <th>
+                Objective
+            </th>
+            <th>
+                Subjective
+            </th>
+            <th>
+                Practical
+            </th>
+            <th>
+                Attendance
+            </th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ct1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Obj)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sub)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Practical)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Attendence)
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>

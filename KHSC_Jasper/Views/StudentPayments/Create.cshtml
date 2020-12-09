@@ -1,0 +1,213 @@
+﻿@model KHSC_Jasper.Models.StudentPayment
+
+@{
+    ViewData["Title"] = "Create";
+}
+<link href="~/css/form.css" rel="stylesheet" />
+<link href="~/css/table.css" rel="stylesheet" />
+<h2>Create</h2>
+
+<h4>StudentPayment</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="StudentId" class="control-label"></label>
+                <select asp-for="StudentId" class="form-control" asp-items="ViewBag.StudentId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Date" class="control-label"></label>
+                <input asp-for="Date" class="form-control" />
+                <span asp-validation-for="Date" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FormFee" class="control-label"></label>
+                <input asp-for="FormFee" class="form-control" />
+                <span asp-validation-for="FormFee" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AdmissionFee" class="control-label"></label>
+                <input asp-for="AdmissionFee" class="form-control" />
+                <span asp-validation-for="AdmissionFee" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ReAdmissionFee" class="control-label"></label>
+                <input asp-for="ReAdmissionFee" class="form-control" />
+                <span asp-validation-for="ReAdmissionFee" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TcCharge" class="control-label"></label>
+                <input asp-for="TcCharge" class="form-control" />
+                <span asp-validation-for="TcCharge" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SeasonCharge" class="control-label"></label>
+                <input asp-for="SeasonCharge" class="form-control" />
+                <span asp-validation-for="SeasonCharge" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CertificateFee" class="control-label"></label>
+                <input asp-for="CertificateFee" class="form-control" />
+                <span asp-validation-for="CertificateFee" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TestimonialFee" class="control-label"></label>
+                <input asp-for="TestimonialFee" class="form-control" />
+                <span asp-validation-for="TestimonialFee" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="WhichMonthFee" class="control-label"></label>
+                <input asp-for="WhichMonthFee" class="form-control" />
+                <span asp-validation-for="WhichMonthFee" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MonthFeeAmount" class="control-label"></label>
+                <input asp-for="MonthFeeAmount" class="form-control" />
+                <span asp-validation-for="MonthFeeAmount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Ct1Fee" class="control-label"></label>
+                <input asp-for="Ct1Fee" class="form-control" />
+                <span asp-validation-for="Ct1Fee" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Ct2Fee" class="control-label"></label>
+                <input asp-for="Ct2Fee" class="form-control" />
+                <span asp-validation-for="Ct2Fee" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HalfYearlyFee" class="control-label"></label>
+                <input asp-for="HalfYearlyFee" class="form-control" />
+                <span asp-validation-for="HalfYearlyFee" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FinalYearlyFee" class="control-label"></label>
+                <input asp-for="FinalYearlyFee" class="form-control" />
+                <span asp-validation-for="FinalYearlyFee" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="WaterElectricityFee" class="control-label"></label>
+                <input asp-for="WaterElectricityFee" class="form-control" />
+                <span asp-validation-for="WaterElectricityFee" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Tex" class="control-label"></label>
+                <input asp-for="Tex" class="form-control" />
+                <span asp-validation-for="Tex" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DevlopmentFee" class="control-label"></label>
+                <input asp-for="DevlopmentFee" class="form-control" />
+                <span asp-validation-for="DevlopmentFee" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BuildingDevFee" class="control-label"></label>
+                <input asp-for="BuildingDevFee" class="form-control" />
+                <span asp-validation-for="BuildingDevFee" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LabFee" class="control-label"></label>
+                <input asp-for="LabFee" class="form-control" />
+                <span asp-validation-for="LabFee" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LibraryFee" class="control-label"></label>
+                <input asp-for="LibraryFee" class="form-control" />
+                <span asp-validation-for="LibraryFee" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ComputerFee" class="control-label"></label>
+                <input asp-for="ComputerFee" class="form-control" />
+                <span asp-validation-for="ComputerFee" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RegistrationFee" class="control-label"></label>
+                <input asp-for="RegistrationFee" class="form-control" />
+                <span asp-validation-for="RegistrationFee" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CautionMoney" class="control-label"></label>
+                <input asp-for="CautionMoney" class="form-control" />
+                <span asp-validation-for="CautionMoney" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Fine" class="control-label"></label>
+                <input asp-for="Fine" class="form-control" />
+                <span asp-validation-for="Fine" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ReportCardFee" class="control-label"></label>
+                <input asp-for="ReportCardFee" class="form-control" />
+                <span asp-validation-for="ReportCardFee" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AdmitCardFee" class="control-label"></label>
+                <input asp-for="AdmitCardFee" class="form-control" />
+                <span asp-validation-for="AdmitCardFee" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IdCardFee" class="control-label"></label>
+                <input asp-for="IdCardFee" class="form-control" />
+                <span asp-validation-for="IdCardFee" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FormFillUpEFf" class="control-label"></label>
+                <input asp-for="FormFillUpEFf" class="form-control" />
+                <span asp-validation-for="FormFillUpEFf" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FormFillUpJsc" class="control-label"></label>
+                <input asp-for="FormFillUpJsc" class="form-control" />
+                <span asp-validation-for="FormFillUpJsc" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FormFillUpSsc" class="control-label"></label>
+                <input asp-for="FormFillUpSsc" class="form-control" />
+                <span asp-validation-for="FormFillUpSsc" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FormFillUpHsc" class="control-label"></label>
+                <input asp-for="FormFillUpHsc" class="form-control" />
+                <span asp-validation-for="FormFillUpHsc" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ItFee" class="control-label"></label>
+                <input asp-for="ItFee" class="form-control" />
+                <span asp-validation-for="ItFee" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ScienceDevelopmentFee" class="control-label"></label>
+                <input asp-for="ScienceDevelopmentFee" class="form-control" />
+                <span asp-validation-for="ScienceDevelopmentFee" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CareFee" class="control-label"></label>
+                <input asp-for="CareFee" class="form-control" />
+                <span asp-validation-for="CareFee" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OtherFeeName" class="control-label"></label>
+                <input asp-for="OtherFeeName" class="form-control" />
+                <span asp-validation-for="OtherFeeName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OtherFeeAmount" class="control-label"></label>
+                <input asp-for="OtherFeeAmount" class="form-control" />
+                <span asp-validation-for="OtherFeeAmount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

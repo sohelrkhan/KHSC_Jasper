@@ -1,0 +1,49 @@
+﻿@model KHSC_Jasper.Models.TeacherInfo
+
+@{
+    ViewData["Title"] = "Details";
+}
+<link href="~/css/form.css" rel="stylesheet" />
+<link href="~/css/table.css" rel="stylesheet" />
+<h2>Details</h2>
+
+<div>
+    <h4>TeacherInfo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TeacherName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TeacherName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Cell)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Cell)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Position)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Position)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Subject)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Subject.SubjectName)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.TeacherId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

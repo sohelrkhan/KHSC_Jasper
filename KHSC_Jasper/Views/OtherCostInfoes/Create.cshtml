@@ -1,0 +1,104 @@
+﻿@model KHSC_Jasper.Models.OtherCostInfo
+
+@{
+    ViewData["Title"] = "Create";
+}
+<link href="~/css/form.css" rel="stylesheet" />
+<link href="~/css/table.css" rel="stylesheet" />
+<h2>Create</h2>
+
+<h4>OtherCostInfo</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Date" class="control-label"></label>
+                <input asp-for="Date" class="form-control" />
+                <span asp-validation-for="Date" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ElectricityBillMonthName" class="control-label"></label>
+                <input asp-for="ElectricityBillMonthName" class="form-control" />
+                <span asp-validation-for="ElectricityBillMonthName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ElectricityBillAmount" class="control-label"></label>
+                <input asp-for="ElectricityBillAmount" class="form-control" />
+                <span asp-validation-for="ElectricityBillAmount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="WaterBillMonth" class="control-label"></label>
+                <input asp-for="WaterBillMonth" class="form-control" />
+                <span asp-validation-for="WaterBillMonth" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="WaterBillAmount" class="control-label"></label>
+                <input asp-for="WaterBillAmount" class="form-control" />
+                <span asp-validation-for="WaterBillAmount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ItBill" class="control-label"></label>
+                <input asp-for="ItBill" class="form-control" />
+                <span asp-validation-for="ItBill" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FunctionCost" class="control-label"></label>
+                <input asp-for="FunctionCost" class="form-control" />
+                <span asp-validation-for="FunctionCost" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ScienceFairCost" class="control-label"></label>
+                <input asp-for="ScienceFairCost" class="form-control" />
+                <span asp-validation-for="ScienceFairCost" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StudyTourCost" class="control-label"></label>
+                <input asp-for="StudyTourCost" class="form-control" />
+                <span asp-validation-for="StudyTourCost" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PoorFund" class="control-label"></label>
+                <input asp-for="PoorFund" class="form-control" />
+                <span asp-validation-for="PoorFund" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SchoolDev" class="control-label"></label>
+                <input asp-for="SchoolDev" class="form-control" />
+                <span asp-validation-for="SchoolDev" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SchoolMaintenance" class="control-label"></label>
+                <input asp-for="SchoolMaintenance" class="form-control" />
+                <span asp-validation-for="SchoolMaintenance" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ServicingCharge" class="control-label"></label>
+                <input asp-for="ServicingCharge" class="form-control" />
+                <span asp-validation-for="ServicingCharge" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AnyCostName" class="control-label"></label>
+                <input asp-for="AnyCostName" class="form-control" />
+                <span asp-validation-for="AnyCostName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AnyCostFee" class="control-label"></label>
+                <input asp-for="AnyCostFee" class="form-control" />
+                <span asp-validation-for="AnyCostFee" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,76 @@
+﻿@model KHSC_Jasper.Models.FinalYearResult
+
+@{
+    ViewData["Title"] = "Delete";
+}
+<link href="~/css/form.css" rel="stylesheet" />
+<link href="~/css/table.css" rel="stylesheet" />
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>FinalYearResult</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Ct2)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Ct2)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Sub)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Sub)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Obj)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Obj)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Practical)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Practical)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Attendance)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Attendance)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Exam)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Exam.ExamName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Student)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Student.StudentName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Subject)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Subject.SubjectName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Teacher)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Teacher.Email)
+        </dd>
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Fy" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

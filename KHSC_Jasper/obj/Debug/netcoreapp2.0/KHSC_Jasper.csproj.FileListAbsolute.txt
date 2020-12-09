@@ -1,0 +1,11 @@
+C:\Users\User\Downloads\KHSC_Final\KHSC_Jasper_Final\KHSC_Jasper\KHSC_Jasper\bin\Debug\netcoreapp2.0\KHSC_Jasper.deps.json
+C:\Users\User\Downloads\KHSC_Final\KHSC_Jasper_Final\KHSC_Jasper\KHSC_Jasper\bin\Debug\netcoreapp2.0\KHSC_Jasper.runtimeconfig.json
+C:\Users\User\Downloads\KHSC_Final\KHSC_Jasper_Final\KHSC_Jasper\KHSC_Jasper\bin\Debug\netcoreapp2.0\KHSC_Jasper.runtimeconfig.dev.json
+C:\Users\User\Downloads\KHSC_Final\KHSC_Jasper_Final\KHSC_Jasper\KHSC_Jasper\bin\Debug\netcoreapp2.0\KHSC_Jasper.dll
+C:\Users\User\Downloads\KHSC_Final\KHSC_Jasper_Final\KHSC_Jasper\KHSC_Jasper\bin\Debug\netcoreapp2.0\KHSC_Jasper.pdb
+C:\Users\User\Downloads\KHSC_Final\KHSC_Jasper_Final\KHSC_Jasper\KHSC_Jasper\obj\Debug\netcoreapp2.0\KHSC_Jasper.csprojAssemblyReference.cache
+C:\Users\User\Downloads\KHSC_Final\KHSC_Jasper_Final\KHSC_Jasper\KHSC_Jasper\obj\Debug\netcoreapp2.0\KHSC_Jasper.csproj.CoreCompileInputs.cache
+C:\Users\User\Downloads\KHSC_Final\KHSC_Jasper_Final\KHSC_Jasper\KHSC_Jasper\obj\Debug\netcoreapp2.0\KHSC_Jasper.AssemblyInfoInputs.cache
+C:\Users\User\Downloads\KHSC_Final\KHSC_Jasper_Final\KHSC_Jasper\KHSC_Jasper\obj\Debug\netcoreapp2.0\KHSC_Jasper.AssemblyInfo.cs
+C:\Users\User\Downloads\KHSC_Final\KHSC_Jasper_Final\KHSC_Jasper\KHSC_Jasper\obj\Debug\netcoreapp2.0\KHSC_Jasper.dll
+C:\Users\User\Downloads\KHSC_Final\KHSC_Jasper_Final\KHSC_Jasper\KHSC_Jasper\obj\Debug\netcoreapp2.0\KHSC_Jasper.pdb

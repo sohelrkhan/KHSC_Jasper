@@ -1,0 +1,307 @@
+﻿@model IEnumerable<KHSC_Jasper.Models.AdmissionForm>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<link href="~/css/form.css" rel="stylesheet" />
+<link href="~/css/table.css" rel="stylesheet" />
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.AdmitCardNo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AdmissionDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CollegeRoll)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Section)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ElectiveSubject1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ElectiveSubject2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ElectiveSubject3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FourthSubject)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NameOftheStudent)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateOfBirth)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Religion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nationality)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Height)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Weight)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BloodGroup)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FathersName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FathersEducationalQualification)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FathersOccupation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FathersMobileNo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FatherNid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MothersName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MothersEducationalQualification)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MothersOccupation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MothersMobileNo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MotherNid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PresentAddress)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PermanentAddress)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NameOfGuardian)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GuardianAddress)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GuardianMobileNo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FathersTotalAnnualincome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.JscyearOfTheExam)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.JscnameOfTheBoard)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.JscroolNo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.JscregistrationNo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Jscsession)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.JscGpa)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.JscnameOfInstitution)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SscyearOfTheExam)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SscnameOfTheBoard)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SscroolNo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SscregistrationNo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sscsession)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SscGpa)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SscnameOfInstitution)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NameOfTheLastSchoolorCollegeAttended)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.AdmitCardNo)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.AdmissionDate)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.CollegeRoll)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Section)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.ElectiveSubject1)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.ElectiveSubject2)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.ElectiveSubject3)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.FourthSubject)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.NameOftheStudent)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.DateOfBirth)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Religion)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Nationality)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Height)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Weight)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.BloodGroup)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.FathersName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.FathersEducationalQualification)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.FathersOccupation)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.FathersMobileNo)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.FatherNid)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.MothersName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.MothersEducationalQualification)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.MothersOccupation)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.MothersMobileNo)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.MotherNid)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.PresentAddress)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.PermanentAddress)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.NameOfGuardian)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.GuardianAddress)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.GuardianMobileNo)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.FathersTotalAnnualincome)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.JscyearOfTheExam)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.JscnameOfTheBoard)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.JscroolNo)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.JscregistrationNo)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Jscsession)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.JscGpa)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.JscnameOfInstitution)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.SscyearOfTheExam)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.SscnameOfTheBoard)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.SscroolNo)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.SscregistrationNo)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Sscsession)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.SscGpa)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.SscnameOfInstitution)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.NameOfTheLastSchoolorCollegeAttended)
+    </td>
+    <td>
+        <a asp-action="Edit" asp-route-id="@item.AfId">Edit</a> |
+        <a asp-action="Details" asp-route-id="@item.AfId">Details</a> |
+        <a asp-action="Delete" asp-route-id="@item.AfId">Delete</a>
+    </td>
+</tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,31 @@
+﻿@model KHSC_Jasper.Models.SectionInfo
+
+@{
+    ViewData["Title"] = "Details";
+}
+<link href="~/css/form.css" rel="stylesheet" />
+<link href="~/css/table.css" rel="stylesheet" />
+<h2>Details</h2>
+
+<div>
+    <h4>SectionInfo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.SectionName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SectionName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Class)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Class.ClassName)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.SectionId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

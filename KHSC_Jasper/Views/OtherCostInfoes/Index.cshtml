@@ -1,0 +1,121 @@
+﻿@model IEnumerable<KHSC_Jasper.Models.OtherCostInfo>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<link href="~/css/form.css" rel="stylesheet" />
+<link href="~/css/table.css" rel="stylesheet" />
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ElectricityBillMonthName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ElectricityBillAmount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.WaterBillMonth)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.WaterBillAmount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ItBill)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FunctionCost)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ScienceFairCost)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StudyTourCost)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PoorFund)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SchoolDev)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SchoolMaintenance)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ServicingCharge)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AnyCostName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AnyCostFee)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Date)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ElectricityBillMonthName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ElectricityBillAmount)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.WaterBillMonth)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.WaterBillAmount)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ItBill)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FunctionCost)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ScienceFairCost)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.StudyTourCost)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PoorFund)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SchoolDev)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SchoolMaintenance)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ServicingCharge)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AnyCostName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AnyCostFee)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.OcId">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.OcId">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.OcId">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
